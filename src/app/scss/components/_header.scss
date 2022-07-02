@@ -1,4 +1,10 @@
+@use '../abstracts' as var;
 .header{
+
+
+    nav {
+        padding: 24px;
+    }
     &__logo{
 
     }
@@ -9,6 +15,22 @@
 
         > span {
             display: block;
+            width: 24px;
+            height: 1px;
+            background-color: var.$color-dark-gray;
+
+            &:not(:last-child){
+                margin-bottom: 4px;
+            }
+    
         }
+    }
+
+    &__links{
+
+        a{
+            text-decoration: none;
+        }
+
     }
 }

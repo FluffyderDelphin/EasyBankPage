@@ -1,9 +1,17 @@
+@use '../abstracts/variables' as var;
+
 html{
     box-sizing: border-box;
 }
 
 *,*::after,*::before{
     box-sizing: inherit;
+    padding: 0;
+    margin: 0;
+}
+
+a, a:visited,a:hover{
+    text-decoration: none;
 }
 
 .flex{
@@ -20,4 +28,14 @@ html{
         align-items: center;
     }
 
+}
+
+button, .button {
+    padding: 1rem 1.875rem;
+    background: linear-gradient(to right,var.$color-primary-green,var.$color-primary-cyan);
+    border: 0;
+    border-radius: 50px;
+    cursor: pointer;
+    color:var.$color-white;
+    
 }
