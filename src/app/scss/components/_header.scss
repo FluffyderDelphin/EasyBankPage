@@ -5,6 +5,41 @@
     nav {
         padding: 1.0625rem 1.5rem;
     }
+
+    &.open {
+
+
+        .header__menu{
+            > span:first-child{
+               transform: rotate(45deg);
+    
+            }
+    
+            > span:nth-child(2){
+               opacity: 0;
+           }
+    
+            > span:last-child{
+               transform: rotate(-45deg);
+               
+           }
+       }
+
+
+       .overlay {
+        position: fixed;
+        top:3.75rem;
+        right: 0px;
+        bottom:0px;
+        left: 0px;
+        // background-color:var.$color-primary-blue;
+        background-image: linear-gradient(var.$color-primary-blue,transparent);
+    }
+
+    }
+
+
+    
     &__logo{
        width: 8.8125rem;
        height: 1.375rem;
@@ -13,6 +48,8 @@
         height: 100%;
        }
     }
+
+ 
 
 
     &__menu{
@@ -23,23 +60,28 @@
             width: 24px;
             height: 1px;
             background-color: var.$color-dark-gray;
+            transform-origin: 3px 1px;
+            transition: all  300ms ease-in-out;
 
             &:not(:last-child){
-                margin-bottom: 4px;
+                margin-bottom: 5px;
             }
     
         }
+
+  
     }
 
     &__links{
-         display: flex;
-         gap: 2rem;
          
         a{
             position: relative;
             color: var.$color-dark-gray;
             text-decoration: none;
             transition: 300ms ease-in-out;
+            &:not(:last-child){
+                margin-right: 2rem;
+            }
 
             &:hover {
                 color: var.$color-primary-blue;
@@ -69,3 +111,4 @@
 
     }
 }
+
