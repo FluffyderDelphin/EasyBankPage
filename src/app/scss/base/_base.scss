@@ -1,6 +1,7 @@
 @use '../abstracts' as var;
 
 html{
+    font-size: 100%;
     box-sizing: border-box;
 }
 
@@ -17,6 +18,9 @@ a, a:visited,a:hover{
 img{
     width: 100%;
 }
+.hidden{
+    display: none;
+}
 
 .flex{
     display: flex;
@@ -32,6 +36,11 @@ img{
         align-items: center;
     }
 
+}
+
+.container {
+    max-width: 69.375rem;
+    margin: 0 auto;
 }
 
 button, .button {

@@ -17,12 +17,12 @@
 </head>
 <body>
   <header class="header" id="header">
-    <div class="overlay" id="#overlay"></div>
-    <nav class="flex flex-jc-sb flex-ai-c">
+    <div class="overlay hidden hideable" id="#overlay"></div>
+    <nav class="container flex flex-jc-sb flex-ai-c">
     <a href="/" class="header__logo">
       <img src="../images/logo.svg" alt="EasyBank Logo">
     </a>
-  <a href="#" id="btn-ham"class="header__menu hidden-desktop">
+  <a href="#" id="btn-ham"class="header__toggle hidden-desktop">
     <span></span>
     <span></span>
     <span></span>
@@ -39,7 +39,15 @@
   </div>
 
   <button type="button" class="hidden-mobile">Request Invite</button>
-  </nav>
+</nav>
+  <div class="container header__mobile__menu hidden hideable">
+    <a href="#" class="header_link">Home</a>
+    <a href="#" class="header_link">About</a>
+    <a href="#" class="header_link">Contact</a>
+    <a href="#" class="header_link">Blog</a>
+    <a href="#" class="header_link">Careers</a>
+  </div>
+
   </header>
 
 
@@ -50,7 +58,7 @@
 
 
 
-
+  <div class="container">
 
 
 
@@ -125,6 +133,8 @@
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Alexander Ulrich</a>.
   </div>
+
+</div>
   <script src="js/script.js"></script>
 </body>
 </html>
