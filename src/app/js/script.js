@@ -3,6 +3,7 @@ const header = document.querySelector('.header');
 const overlay = document.querySelector('.overlay');
 const hiddenElements = document.querySelectorAll('.hideable');
 
+// Enabling show and hide Funtionality for the Mobile Menu
 hamBtn.addEventListener('click', () => {
   console.log('Hamburger clicked');
   if (header.classList.contains('open')) {
