@@ -10,6 +10,11 @@ body{
     font-size: var.$font-s-m;
     color: var.$color-dark-gray;
     font-weight: 400;
+
+
+    h1,h2,h3{
+        margin-top:0px ;
+    }
 }
 
 a{
@@ -20,4 +25,22 @@ a{
 
 button, .button {
 font-weight: 700;
+}
+
+
+.hero {
+ 
+    &__text {
+        h1{
+            font-weight: 300;
+            color: var.$color-primary-blue;
+            font-size: 2.5rem;
+            line-height: 1.15;
+            margin-bottom: 1.5rem;
+        }
+        p{
+            line-height: 1.5;
+            margin-bottom: 2.25rem;
+        }
+    }
 }
