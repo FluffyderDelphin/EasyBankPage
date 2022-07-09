@@ -56,10 +56,50 @@ img{
         padding-right: 1.5rem;
         padding-bottom: 4.375rem;
         padding-left: 1.5rem;
+
+        @include var.breakpoint-up(large){
+            padding-top: 6rem;
+            padding-bottom: 6rem;
+        }
+    }
+
+    &--py{
+        padding-top: 4.375rem;
+        padding-bottom: 4.375rem;
+
+        @include var.breakpoint-up(large){
+            padding-top: 6rem;
+            padding-bottom: 6rem;
+        }
+    }
+    &--px{
+        padding-right: 1.5rem;
+        padding-left: 1.5rem;
+    }
+    &--pt{
+        padding:4.375rem;
+
+        @include var.breakpoint-up(large){
+        padding-top:6rem;
+        }
+    }
+    &--pr{
+        padding-right: 1.5rem;
+    }
+    &--pb{
+        padding-bottom: 4.375rem;  
+        
+        @include var.breakpoint-up(large){
+            padding-bottom: 6rem;
+        }
+    }
+    &--pl{
+        padding-left: 1.5rem;
     }
 }
 
 button, .button {
+    display: inline-block;
     padding: .875rem 2.1875rem;
     background: linear-gradient(to right,var.$color-primary-green,var.$color-primary-cyan);
     border: 0;
@@ -67,7 +107,7 @@ button, .button {
     cursor: pointer;
     color:var.$color-white;
     transition: opacity  300ms ease-in-out;
-    display: inline-block;
+
 
     &:hover{
         opacity: 0.70;
