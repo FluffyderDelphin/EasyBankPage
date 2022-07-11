@@ -1,0 +1,42 @@
+@use '../abstracts' as var;
+
+.features{
+
+
+    &__intro{
+        margin-bottom: 3.5rem;
+    }
+   &__card{
+    display: flex;
+    flex-direction: column;
+    gap: 2.4375rem;
+    @include var.breakpoint-up(medium){
+        flex-direction: row;
+        gap:1.8125rem ;
+    }
+    // @include var.breakpoint-up(large){
+ 
+    // }
+
+    &__item{
+        // border: 1px solid mediumorchid;
+        @include var.breakpoint-up(large){
+            flex: 1;
+        }
+    }
+     &__icon{
+      margin: 0 auto;
+      width: 72px;
+      margin-bottom:1.8125rem ;
+     }
+     &__title{
+        margin-bottom: 1.3125rem;
+        
+    }
+    &__text{
+        
+    }
+
+   }
+
+}
