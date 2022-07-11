@@ -1,10 +1,14 @@
 @use '../abstracts' as var;
 
 .features{
-
+  background-color: var.$color-light-gray;
 
     &__intro{
         margin-bottom: 3.5rem;
+
+        @include var.breakpoint-up(medium){
+            text-align: left;
+        }
     }
    &__card{
     display: flex;
@@ -13,6 +17,7 @@
     @include var.breakpoint-up(medium){
         flex-direction: row;
         gap:1.8125rem ;
+        text-align: left;
     }
     // @include var.breakpoint-up(large){
  
@@ -28,6 +33,11 @@
       margin: 0 auto;
       width: 72px;
       margin-bottom:1.8125rem ;
+      @include var.breakpoint-up(medium){
+      margin: 0;
+      margin-bottom:1.8125rem ;
+    
+    }
      }
      &__title{
         margin-bottom: 1.3125rem;
