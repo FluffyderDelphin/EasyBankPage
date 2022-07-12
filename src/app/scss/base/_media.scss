@@ -1,0 +1,13 @@
+@use '../abstracts' as var;
+
+.hidden-mobile{
+    @include  var.breakpoint-down (medium){
+     display: none;
+    }
+ }
+ 
+ .hidden-desktop{
+     @include var.breakpoint-up(medium){
+         display: none;
+     }
+ }

@@ -1,0 +1,51 @@
+@use '../abstracts' as var;
+
+html{
+    font-size: 100%;
+    box-sizing: border-box;
+}
+
+*,*::after,*::before{
+    box-sizing: inherit;
+    padding: 0;
+    margin: 0;
+}
+
+a, a:visited,a:hover{
+    text-decoration: none;
+}
+body{
+    overflow-x: hidden;
+
+    &.noscroll {
+        overflow: hidden;
+      }
+
+}
+
+img{
+    width: 100%;
+}
+
+
+
+
+button, .button {
+    display: inline-block;
+    padding: .875rem 2.1875rem;
+    background: linear-gradient(to right,var.$color-primary-green,var.$color-primary-cyan);
+    border: 0;
+    border-radius: 50px;
+    cursor: pointer;
+    color:var.$color-white;
+    font-weight: 400;
+    transition: opacity  300ms ease-in-out;
+
+
+    &:hover{
+        opacity: 0.70;
+    }
+    
+}
+
+
