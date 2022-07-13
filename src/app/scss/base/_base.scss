@@ -3,6 +3,7 @@
 html{
     font-size: 100%;
     box-sizing: border-box;
+    overflow-x: hidden;
 }
 
 *,*::after,*::before{
@@ -15,7 +16,7 @@ a, a:visited,a:hover{
     text-decoration: none;
 }
 body{
-    overflow-x: hidden;
+    // overflow-x: hidden;
 
     &.noscroll {
         overflow: hidden;
