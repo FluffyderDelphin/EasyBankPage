@@ -16,7 +16,7 @@ a, a:visited,a:hover{
     text-decoration: none;
 }
 body{
-    // overflow-x: hidden;
+    overflow-x: hidden;
 
     &.noscroll {
         overflow: hidden;
