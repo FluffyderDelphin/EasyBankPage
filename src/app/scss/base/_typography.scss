@@ -135,6 +135,11 @@ font-size: 0.875rem;
             color: var.$color-white;
             font-size: 0.9375rem;
             font-weight: 400;
+        
+
+            @include var.breakpoint-up(medium){
+                text-align: left;
+             }
         }
     }
     &__copyright{
