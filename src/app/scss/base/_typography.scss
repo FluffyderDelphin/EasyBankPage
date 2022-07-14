@@ -129,3 +129,16 @@ font-size: 0.875rem;
     }
 }
 
+.footer{
+    &__links{
+        a{
+            color: var.$color-white;
+            font-size: 0.9375rem;
+            font-weight: 400;
+        }
+    }
+    &__copyright{
+        font-size:0.9375rem ;
+    }
+}
+
