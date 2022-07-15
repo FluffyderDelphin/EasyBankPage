@@ -65,11 +65,20 @@
         }
         &__title{
             margin-bottom: 1rem;
+            cursor: pointer;
+            h3{
+                transition: color 150ms ease-in-out;
+            }
+  
+
+            &:hover h3{
+              color:var.$color-primary-green !important;
+            }
          
            
         }
         &__description{
-     
+          
         }
       
     }

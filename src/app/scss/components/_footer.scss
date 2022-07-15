@@ -66,9 +66,17 @@
     margin-bottom:  2.5rem;
    }
    &__icon{
-    img{
+    &__svg{
       width: 24px;
       height: 24px;
+      fill: #DA4567;
+      path{
+        transition: fill 150ms ease-in-out;
+      }
+
+      &:hover path{
+        fill: var.$color-primary-green
+      }
     }
    }
 
@@ -80,6 +88,7 @@
     @include var.breakpoint-down(medium){
       flex-direction: column;
     }
+
 
 
     @include var.breakpoint-up(medium){
@@ -96,8 +105,15 @@
      
     }
 
-  
     
+   }
+
+   &__link{
+    transition: color 150ms ease-in-out;
+
+    &:hover{
+      color:var.$color-primary-green
+    }
    }
    &__btn{
      margin-bottom: 1.875rem;
