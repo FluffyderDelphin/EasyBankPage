@@ -5,7 +5,11 @@
      display: none;
     }
  }
- 
+ .header__button{
+    @include  var.breakpoint-down (large){
+        display: none;
+       }
+ }
  .hidden-desktop{
      @include var.breakpoint-up(medium){
          display: none;
